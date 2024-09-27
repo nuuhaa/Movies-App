@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".activities.MovieActivity">
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#050505"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="SpeakableTextPresentCheck" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:textSize="20dp"
+                    android:text="the_others_2001"
+                    android:textColor="#FFFFFF"
+                    android:textDirection="locale"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="241dp"
+                    android:contentDescription="todo"
+                    android:src="@drawable/home_icon" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50sp"
+                    android:text="Description"
+                    android:textColor="#FBFBFB"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/description_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="grace_a_religious_woman_lives_with_her_two_children_in_a_palace_in_that_remote_area_waiting_for_her_husband_who_went_to_participate_in_world_war_ii_and_has_to_hire_some_servants_to_take_care_of_her_two_children_who_suffer_from_a_disease_that_prevents_them_from_being_exposed_to_the_sun_amazing"
+                    android:textColor="#FDFCFC" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Actors"
+                        android:textColor="#FEFFFF" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp" />
+
+                    <TextView
+                        android:id="@+id/country_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="spain"
+                        android:textColor="#FBF9F9" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PlatForms"
+                        android:textColor="#F7FAFA" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp" />
+
+                    <TextView
+                        android:id="@+id/language_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="english"
+                        android:textColor="#EBEDED" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Classification"
+                        android:textColor="#F4F4F4" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp" />
+
+                    <TextView
+                        android:id="@+id/classifications_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="horror_vagueness_excitement"
+                        android:textColor="@color/white" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rating"
+                        android:textColor="#F4F4F4"
+                        tools:ignore="DuplicateIds" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp" />
+
+                    <TextView
+                        android:id="@+id/elevation_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="_7_6_from_10"
+                        android:textColor="@color/white" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20sp">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add To Favourites"
+                        android:textColor="@color/white" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="10sp" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/red"
+                        android:text="add" />
+
+                    <Space
+                        android:layout_width="10sp"
+                        android:layout_height="10sp" />
+
+                </TableRow>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    tools:context=".activity_user">-->
+
+
+    <!--    <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--        android:id="@+id/profile_image"-->
+    <!--        android:layout_width="250dp"-->
+    <!--        android:layout_height="250dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:src="@drawable/home_icon"-->
+    <!--        android:layout_marginTop="20dp"/>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/scode_profile"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_below="@+id/profile_image"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:text=""/>-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/relative_name"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:clickable="true"-->
+    <!--        android:focusable="true"-->
+    <!--        android:background="?attr/selectableItemBackground"-->
+    <!--        android:layout_below="@+id/scode_profile"-->
+    <!--        android:paddingVertical="10dp">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:layout_marginLeft="70dp">-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Name"-->
+    <!--                android:textSize="12sp"/>-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/name_profile"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Chris Morris"-->
+    <!--                android:textSize="26sp"-->
+    <!--                android:textColor="@color/black"/>-->
+    <!--        </LinearLayout>-->
+    <!--    </RelativeLayout>-->
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/relative_phone"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/relative_name"-->
+    <!--        android:paddingVertical="10dp">-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:layout_marginLeft="70dp">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Phone"-->
+    <!--                android:textSize="12sp"/>-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/phone_profile"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="+91-999999999"-->
+    <!--                android:textSize="26sp"-->
+    <!--                android:textColor="@color/black"/>-->
+
+    <!--        </LinearLayout>-->
+
+    <!--    </RelativeLayout>-->
+
+    <!--    <View-->
+    <!--        android:layout_below="@+id/relative_phone"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:background="@color/black"/>-->
+
+
+
+    <!--    <View-->
+    <!--        android:layout_below="@+id/relative_name"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:background="@color/black"/>-->
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/relative_house_no"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:clickable="true"-->
+    <!--        android:focusable="true"-->
+    <!--        android:background="?attr/selectableItemBackground"-->
+    <!--        android:layout_below="@id/relative_phone"-->
+    <!--        android:paddingVertical="10dp">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:layout_marginLeft="70dp">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Country"-->
+    <!--                android:textSize="12sp"/>-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/country_profile"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="UAE"-->
+    <!--                android:textSize="26sp"-->
+    <!--                android:textColor="@color/black"/>-->
+
+    <!--        </LinearLayout>-->
+
+
+    <!--    </RelativeLayout>-->
+
+
+    <!--</RelativeLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

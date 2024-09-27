@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="christopher">Christopher</string>
+    <string-array name="spinner">
+        <item>action</item>
+        <item>horror</item>
+    </string-array>
+</resources>
